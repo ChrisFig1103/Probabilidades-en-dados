@@ -14,6 +14,10 @@ app.get('/pagina2',(req,res) =>{
     res.sendFile(path.resolve(__dirname,'index2.html'))
 }) 
 
+app.get('/pagina3',(req,res) =>{
+    res.sendFile(path.resolve(__dirname,'index3.html'))
+}) 
+
 app.listen(port,()=>{
     console.log(`listening to the port ${port}`);
 })
